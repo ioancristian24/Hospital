@@ -1,5 +1,6 @@
 package com.sda.client;
 
+import com.sda.entities.Affiliated_with;
 import com.sda.entities.Department;
 import com.sda.entities.Physician;
 import com.sda.service.DepartmentService;
@@ -22,18 +23,19 @@ public class ClientTest {
               //getDepartmentById(departmentService);
               //updateDepartmentById(departmentService);
               //deleteDepartmentById(departmentService);
+
     }
 
     private static void deletePhysicianById(PhysicianService physicianService) {
-        physicianService.deletePhysicianById(14);
+        physicianService.deletePhysicianById(16);
     }
 
     private static void updatePhysicianById(PhysicianService physicianService) {
-        physicianService.updatePhysicianById(3, "Ginecolog");
+        physicianService.updatePhysicianById(16, "Ginecolog");
     }
 
     private static void getPhysicianById(PhysicianService physicianService) {
-        Physician physician = physicianService.getPhysicianById(1);
+        Physician physician = physicianService.getPhysicianById(16);
         System.out.println(physician);
     }
 
@@ -43,9 +45,9 @@ public class ClientTest {
 
     private static Physician getPhysician() {
         Physician physician = new Physician();
-        physician.setName("Leon Button");
-        physician.setPosition("Surgeon");
-        physician.setSsn(798545);
+        physician.setName("Eduard Norton");
+        physician.setPosition("Cardiologist");
+        physician.setSsn(799645);
         return physician;
     }
 
@@ -54,7 +56,7 @@ public class ClientTest {
     }
 
     private static void updateDepartmentById(DepartmentService departmentService) {
-        departmentService.updateDepartmentById(3, "Obstretical");
+        departmentService.updateDepartmentById(3, "Biochemistry");
     }
 
     private static void getDepartmentById(DepartmentService departmentService) {

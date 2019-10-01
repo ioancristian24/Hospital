@@ -6,6 +6,6 @@ public interface PhysicianDAO {
 
     void addPhysician(Physician physician);
     Physician displayPhysicianById(int employeeId);
-    void updatePhysicianById(int employeedId, String position);
+    void updatePhysicianById(int employeeId, String position);
     void deletePhysicianById(Integer employeeId);
 }

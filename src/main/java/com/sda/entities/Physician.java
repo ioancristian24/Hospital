@@ -1,7 +1,5 @@
 package com.sda.entities;
-
 import org.hibernate.annotations.DynamicUpdate;
-
 import javax.persistence.*;
 
 @Entity
@@ -25,6 +23,17 @@ public class Physician {
 
     @OneToOne(mappedBy = "physician")
     private Department department;
+
+    public Physician(String name, String position, Integer ssn, Department department) {
+        this.name = name;
+        this.position = position;
+        this.ssn = ssn;
+        this.department = department;
+    }
+
+    public Physician() {
+
+    }
 
     public Integer getEmployeeId() {
         return employeeId;

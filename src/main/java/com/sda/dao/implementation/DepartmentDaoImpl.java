@@ -2,7 +2,6 @@ package com.sda.dao.implementation;
 
 import com.sda.dao.DepartmentDAO;
 import com.sda.entities.Department;
-import com.sda.entities.Physician;
 import com.sda.utils.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

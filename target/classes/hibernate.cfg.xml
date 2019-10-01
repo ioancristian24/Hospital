@@ -13,6 +13,7 @@
 
         <mapping class="com.sda.entities.Physician"/>
         <mapping class="com.sda.entities.Department"/>
+        <mapping class="com.sda.entities.Affiliated_with"/>
 
     </session-factory>
 </hibernate-configuration>

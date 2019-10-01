@@ -15,7 +15,7 @@ public class Department {
     private String name;
 
     @OneToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "head")
+    @JoinColumns({@JoinColumn(name = "head", referencedColumnName = "employee_id")})
     private Physician physician;
 
     public Integer getDepartmentId() {
