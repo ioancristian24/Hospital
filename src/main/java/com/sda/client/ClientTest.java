@@ -3,8 +3,10 @@ package com.sda.client;
 import com.sda.entities.Affiliated_with;
 import com.sda.entities.Department;
 import com.sda.entities.Physician;
+import com.sda.service.Affiliated_withService;
 import com.sda.service.DepartmentService;
 import com.sda.service.PhysicianService;
+import com.sda.service.implementation.Affiliated_withServiceImpl;
 import com.sda.service.implementation.DepartmentServicesImpl;
 import com.sda.service.implementation.PhysicianServicesImpl;
 
@@ -19,11 +21,29 @@ public class ClientTest {
             //deletePhysicianById(physicianService);
 
         DepartmentService departmentService = new DepartmentServicesImpl();
-              createDepartment(departmentService);
+              //createDepartment(departmentService);
               //getDepartmentById(departmentService);
               //updateDepartmentById(departmentService);
               //deleteDepartmentById(departmentService);
 
+        Affiliated_withService affiliated_withService = new Affiliated_withServiceImpl();
+              getAffiliated_withById(affiliated_withService);
+              //updateAffiliated_withById(affiliated_withService);
+    }
+
+    private static void getAffiliated_withById(Affiliated_withService affiliated_withService) {
+        Affiliated_with affiliated_with = affiliated_withService.getAffiliated_withById();
+        System.out.println(affiliated_with);
+    }
+
+    private static void updateAffiliated_withById(Affiliated_withService affiliated_withService) {
+        affiliated_withService.updateAffiliated_withById(,false);
+    }
+
+    private static Affiliated_with getAffiliated_with(Affiliated_withService affiliated_withService) {
+        Affiliated_with affiliated_with = new Affiliated_with();
+        affiliated_with.setPrimaryAffiliation(true);
+        return affiliated_with;
     }
 
     private static void deletePhysicianById(PhysicianService physicianService) {
@@ -71,7 +91,6 @@ public class ClientTest {
     private static Department getDepartment() {
         Department department = new Department();
         department.setName("Mineralogy");
-        department.setPhysician(getPhysician());
         return department;
     }
 }

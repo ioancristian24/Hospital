@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb7c69bf-51d4-4cca-9421-93395dabb655" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/entities/Affiliated_with.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/entities/Affiliated_with_Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/dao/implementation/Affiliated_withDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/service/Affiliated_withService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/service/implementation/Affiliated_withServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hospital.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/client/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/client/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/dao/PhysicianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/dao/PhysicianDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/dao/implementation/DepartmentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/dao/implementation/DepartmentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/entities/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/entities/Physician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/entities/Physician.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/client/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/client/ClientTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/dao/implementation/DepartmentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/dao/implementation/DepartmentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/entities/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/entities/Physician.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/entities/Physician.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/client/ClientTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sda/entities/Affiliated_with_Id.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sda/entities/Affiliated_with_Id.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,7 +107,7 @@
       <workItem from="1569681453315" duration="26406000" />
       <workItem from="1569741433963" duration="17412000" />
       <workItem from="1569873235607" duration="3477000" />
-      <workItem from="1569953613825" duration="4268000" />
+      <workItem from="1569953613825" duration="9553000" />
     </task>
     <servers />
   </component>
