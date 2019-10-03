@@ -1,6 +1,7 @@
 package com.sda.client;
 
 import com.sda.entities.Affiliated_with;
+import com.sda.entities.Affiliated_with_Id;
 import com.sda.entities.Department;
 import com.sda.entities.Physician;
 import com.sda.service.Affiliated_withService;
@@ -27,24 +28,36 @@ public class ClientTest {
               //deleteDepartmentById(departmentService);
 
         Affiliated_withService affiliated_withService = new Affiliated_withServiceImpl();
-              getAffiliated_withById(affiliated_withService);
-              //updateAffiliated_withById(affiliated_withService);
+                createAffiliated_with(affiliated_withService);
+                //readAffiliated_withById(affiliated_withService);
+                //updateAffiliated_withById(affiliated_withService);
     }
 
-    private static void getAffiliated_withById(Affiliated_withService affiliated_withService) {
-        Affiliated_with affiliated_with = affiliated_withService.getAffiliated_withById();
+    private static void createAffiliated_with(Affiliated_withService affiliated_withService) {
+        affiliated_withService.createAffiliated_with(getAffiliated_with());
+    }
+
+
+    private static void readAffiliated_withById(Affiliated_withService affiliated_withService) {
+        Affiliated_with_Id affiliated_with = affiliated_withService.getAffiliated_withById
+                (new Affiliated_with_Id(5,3));
         System.out.println(affiliated_with);
     }
 
     private static void updateAffiliated_withById(Affiliated_withService affiliated_withService) {
-        affiliated_withService.updateAffiliated_withById(,false);
-    }
+       affiliated_withService.updateAffiliated_withById((new Affiliated_with_Id(1,4)),false);
+   }
 
-    private static Affiliated_with getAffiliated_with(Affiliated_withService affiliated_withService) {
+
+    private static Affiliated_with getAffiliated_with() {
         Affiliated_with affiliated_with = new Affiliated_with();
+        affiliated_with.setId(new Affiliated_with_Id(1, 1));
         affiliated_with.setPrimaryAffiliation(true);
         return affiliated_with;
     }
+
+
+
 
     private static void deletePhysicianById(PhysicianService physicianService) {
         physicianService.deletePhysicianById(16);
@@ -70,6 +83,9 @@ public class ClientTest {
         physician.setSsn(799645);
         return physician;
     }
+
+
+
 
     private static void deleteDepartmentById(DepartmentService departmentService) {
         departmentService.deleteDepartmentById(5);

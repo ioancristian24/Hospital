@@ -49,4 +49,12 @@ public class Affiliated_with_Id implements Serializable {
     public int hashCode() {
         return Objects.hash(physician, department);
     }
+
+    @Override
+    public String toString() {
+        return "Affiliated_with_Id{" +
+                "physician=" + physician +
+                ", department=" + department +
+                '}';
+    }
 }

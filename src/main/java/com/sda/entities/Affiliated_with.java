@@ -30,4 +30,5 @@ public class Affiliated_with {
     public void setPrimaryAffiliation(boolean primaryAffiliation) {
         this.primaryAffiliation = primaryAffiliation;
     }
+
 }
